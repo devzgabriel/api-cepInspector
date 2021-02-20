@@ -25,7 +25,7 @@
     "start": "node src/server.ts",
     "dev": "nodemon src/server.ts",
     "knex-migrate": "knex --knexfile knexfile.ts migrate:latest",
-    "build": "sucrase ./src -d ./dist --transforms typescript,imports",
-    "test": "jest"
+    "test": "jest",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
   }
 }
