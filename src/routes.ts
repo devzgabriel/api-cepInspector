@@ -4,6 +4,6 @@ import { InspectCepController } from "./controllers/InspectCepController";
 const routes = express.Router();
 const inspectCepController = new InspectCepController();
 
-routes.get("/inspect", inspectCepController.index);
+routes.get("/inspect/:cepNumber", inspectCepController.index);
 
 export default routes;
