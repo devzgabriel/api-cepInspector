@@ -41,6 +41,10 @@ yarn install
 ```
 
 ```Bash
+yarn knex-migrate
+```
+
+```Bash
 yarn dev
 ```
 
