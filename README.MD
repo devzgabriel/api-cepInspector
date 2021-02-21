@@ -4,15 +4,19 @@
 
 <!-- ### Você já pode testar o site se quiser! Só clicar nesse link: [CPF Inspector](sem-link) -->
 
+### Se quiser visitar o repositório do frontend é só clicar nesse link: [CPF Inspector](https://github.com/devzgabriel/CEP-Inspector)
+
 <br>
 
-### Mas se você quiser usar a API, essas são as rotas disponíveis
+## Rotas disponíveis
+
+**Inspecionar CEP**
 
 ```HTTP
 URL estará disponível em breve!
 ```
 
-### Ou usar um serviço alternativo ( [viaCep](https://viacep.com.br/) )
+### Enquanto não está disponivel pode usar um serviço alternativo ( [viaCep](https://viacep.com.br/) )
 
 ```HTTP
 viacep.com.br/ws/{cep}/json/
@@ -24,7 +28,7 @@ viacep.com.br/ws/{cep}/json/
 
 <br>
 
-### **_Instalando o projeto_**
+### **_Instalando e executando o projeto_**
 
 No terminal digite todos os comandos abaixo:
 
@@ -48,13 +52,41 @@ yarn knex-migrate
 yarn dev
 ```
 
+<hr>
+
+### **Se seu objetivo é testar o frontend, isso é tudo que precisa faser! Mas se quer usar somente a API esses são os próximos passos:**
+
+<br>
+
+Para fazer requisições use a url abaixo e insira o número do CEP (sem traços) no lugar de "{cep}"
+
+```HTTP
+http://localhost:3333/inspect/{cep}
+```
+
+O retorno será um JSON como exemplo abaixo:
+
+```JSON
+{
+  "id": 6,
+  "cep": "01310924",
+  "logradouro": "Avenida Paulista 1912",
+  "complemento": "",
+  "bairro": "Bela Vista",
+  "localidade": "São Paulo",
+  "uf": "SP",
+  "ibge": "3550308",
+  "gia": "1004",
+  "ddd": "11",
+  "siafi": "7107"
+}
+```
+
 ### **_Executando testes_**
 
 Os testes serão acrescentados em breve!
 
-<!-- ```Bash
-yarn dev
-```
+<!--
 Para executar todos os testes digite o comando abaixo
 
 ```Bash
