@@ -24,7 +24,7 @@ export class InspectCepController {
     //search CEP in the database
     const cepInfo = await knex("cepInfo").select("*").where("cep", cepNumber);
     if (cepInfo.length !== 0) {
-      return response.status(200).json(cepInfo);
+      return response.status(200).json(cepInfo[0]);
     }
 
     //if not in database: make request to api viaCep
@@ -53,6 +53,6 @@ export class InspectCepController {
     await trx.commit();
 
     //send response
-    return response.status(200).json(data);
+    return response.status(200).json(formatedData);
   }
 }
