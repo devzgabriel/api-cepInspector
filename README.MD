@@ -92,3 +92,7 @@ Para executar todos os testes digite o comando abaixo
 ```Bash
 yarn test
 ``` -->
+
+<hr>
+
+## **Criado por Gabriel Silva**
