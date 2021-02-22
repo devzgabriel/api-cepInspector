@@ -1,10 +1,10 @@
-# CPF Inspector
+# CEP Inspector
 
 ## Esse é o repositório da Api do CEP Inspector!
 
 <!-- ### Você já pode testar o site se quiser! Só clicar nesse link: [CPF Inspector](sem-link) -->
 
-### Se quiser visitar o repositório do frontend é só clicar nesse link: [CPF Inspector](https://github.com/devzgabriel/CEP-Inspector)
+### Se quiser visitar o repositório do frontend é só clicar nesse link: [CEP Inspector](https://github.com/devzgabriel/CEP-Inspector)
 
 <br>
 
